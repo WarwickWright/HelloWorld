@@ -11,8 +11,13 @@ open class Person {
         return 7
     }
 
+    @JvmName("getAgeProtected1")
+    fun getAgeProtected(): Int {
+        return ageProtected
+    }
+
     var name = ""
     var age = 0
-    var ageProtected = 0
+    protected open var ageProtected = 0
 
 }

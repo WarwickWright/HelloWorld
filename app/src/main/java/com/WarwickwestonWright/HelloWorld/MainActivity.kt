@@ -30,6 +30,11 @@ class MainActivity : AppCompatActivity() {
         txtName = findViewById<EditText>(R.id.txtName)
         txtAge = findViewById<EditText>(R.id.txtAge)
 
+        var person = Person("Warwick", 53)
+        var personEight : PersonEight = PersonEight("Warwick", 53)
+        person.getAgeProtected() // Returns 0
+        personEight.getAgeProtected() // Returns 8
+
         btnAddValue.setOnClickListener { button ->
             try {
                 val name = txtName.text.toString()
