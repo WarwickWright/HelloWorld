@@ -1,5 +1,4 @@
 package com.WarwickwestonWright.HelloWorld.Classes
-import com.WarwickwestonWright.HelloWorld.Classes.Person
 
 open class PersonEight(name: String, age: Int) : Person(name, age) {
 

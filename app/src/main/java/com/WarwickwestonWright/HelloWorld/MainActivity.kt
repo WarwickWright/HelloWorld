@@ -1,15 +1,15 @@
 package com.WarwickwestonWright.HelloWorld
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import androidx.appcompat.app.AppCompatActivity
+import com.WarwickwestonWright.HelloWorld.Classes.GetNumbs
 import com.WarwickwestonWright.HelloWorld.Classes.Person
 import com.WarwickwestonWright.HelloWorld.Classes.PersonEight
-import com.WarwickwestonWright.HelloWorld.Classes.PersonNine
 
 class MainActivity : AppCompatActivity() {
 
@@ -20,10 +20,12 @@ class MainActivity : AppCompatActivity() {
     private lateinit var txtAge : EditText
     private lateinit var person : Person
     private var people : MutableList<Person> = mutableListOf()
+    private var getNums = GetNumbs()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+        getNums.processInput()
         lblMyText = findViewById<TextView>(R.id.lblMyText)
         btnAddValue = findViewById<Button>(R.id.btnAddValue)
         btnShowList = findViewById<Button>(R.id.btnShowList)
@@ -59,4 +61,8 @@ class MainActivity : AppCompatActivity() {
         }
 
     }
+
+
+
+
 }
