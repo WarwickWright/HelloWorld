@@ -1,4 +1,4 @@
-package com.WarwickwestonWright.HelloWorld.Classes
+package com.WarwickWestonWright.HelloWorld.Classes
 
 open class Person {
 

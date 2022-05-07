@@ -1,4 +1,4 @@
-package com.WarwickwestonWright.HelloWorld.Classes
+package com.WarwickWestonWright.HelloWorld.Classes
 
 import android.util.Log
 import java.util.regex.Pattern

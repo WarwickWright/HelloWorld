@@ -1,4 +1,4 @@
-package com.WarwickwestonWright.HelloWorld
+package com.WarwickWestonWright.HelloWorld
 
 import android.os.Bundle
 import android.util.Log
@@ -7,9 +7,9 @@ import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
-import com.WarwickwestonWright.HelloWorld.Classes.GetNumbs
-import com.WarwickwestonWright.HelloWorld.Classes.Person
-import com.WarwickwestonWright.HelloWorld.Classes.PersonEight
+import com.WarwickWestonWright.HelloWorld.Classes.GetNumbs
+import com.WarwickWestonWright.HelloWorld.Classes.Person
+import com.WarwickWestonWright.HelloWorld.Classes.PersonEight
 
 class MainActivity : AppCompatActivity() {
 
@@ -33,7 +33,7 @@ class MainActivity : AppCompatActivity() {
         txtAge = findViewById<EditText>(R.id.txtAge)
 
         var person = Person("Warwick", 53)
-        var personEight : PersonEight = PersonEight("Warwick", 53)
+        var personEight = PersonEight("Warwick", 53)
         person.getAgeProtected() // Returns 0
         personEight.getAgeProtected() // Returns 8
 
