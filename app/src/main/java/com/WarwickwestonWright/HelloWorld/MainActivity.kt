@@ -20,12 +20,12 @@ class MainActivity : AppCompatActivity() {
     private lateinit var txtAge : EditText
     private lateinit var person : Person
     private var people : MutableList<Person> = mutableListOf()
-    private var getNums = GetNumbs()
+    private var getNumbs = GetNumbs()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        getNums.processInput()
+        getNumbs.processInput()
         lblMyText = findViewById<TextView>(R.id.lblMyText)
         btnAddValue = findViewById<Button>(R.id.btnAddValue)
         btnShowList = findViewById<Button>(R.id.btnShowList)
